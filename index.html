@@ -7,18 +7,7 @@
   
 </head>
 <body>
-  <div id="vizContainer"></div>
-  <script src="https://prod-useast-a.online.tableau.com/javascripts/api/tableau-2.min.js"></script>
-  <script>
-    var viz
-    function initViz() {
-      var containerDiv = document.getElementById("vizContainer"),
-      url = "https://prod-useast-a.online.tableau.com/t/mekado/views/MyFirstProject_16679780325210/Dashboard1";
-
-      viz = new tableau.Viz(containerDiv, url);
-    }
-    initViz();
-  </script>
-  
+    <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+    <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/mekado/views/MyFirstProject_16679780325210/Dashboard1' width='1000' height='827' hide-tabs toolbar='bottom' ></tableau-viz>
 </body>
 </html>
